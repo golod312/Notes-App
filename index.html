@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+          <link rel="stylesheet" href="index.css">
+          <title>Document</title>
+</head>
+
+<body>
+
+
+          <div class="header" id="addBtn">
+                    <span>Add Note ...</span>
+          </div>
+
+          <div class="favorite_main">
+                    <div id="favorites" class="notes"></div>
+          </div>
+
+          <div class="notes_main">
+                    <div id="notes" class="notes">
+
+                    </div>
+          </div>
+
+          <div class="popup_main hide" id="popup_main">
+                    <div class="popup_bg">
+                              <div class="popup_main_container">
+
+                                        <div class="popup_img">
+                                                  <img id="img_popup" class="img hide" src="" alt="">
+                                        </div>
+
+                                        <textarea class="textarea"></textarea>
+
+                                        <div class="popup_tools_container">
+                                                  <div class="popup_tools">
+                                                            <div class="popup_left">
+                                                                      <button class="polette"><i
+                                                                                          class="fa-solid fa-palette"
+                                                                                          index_pal=${id}></i></button>
+                                                                      <label class="custom-file-upload">
+                                                                                <input class="img_btn" type="file"
+                                                                                          id="file-upload_popup${id}"
+                                                                                          index_img=${id} /> <i
+                                                                                          class="fa-solid fa-image "></i>
+                                                                      </label>
+
+                                                                      <button class="delete"><i class="far fa-trash-alt"
+                                                                                          index_del=${id}></i></button>
+                                                            </div>
+                                                            <div class="color_main ">
+                                                                      <div class="popup_color hide">
+                                                                                <div class="color">
+                                                                                          <div class="circle color_1"
+                                                                                                    index_id="${id}"
+                                                                                                    index_color="FFFFFF">
+                                                                                          </div>
+
+                                                                                          <div class="circle color_2"
+                                                                                                    index_id="${id}"
+                                                                                                    index_color="CCFF90">
+                                                                                          </div>
+
+                                                                                          <div class="circle color_3"
+                                                                                                    index_id="${id}"
+                                                                                                    index_color="FDCFE8">
+                                                                                          </div>
+
+                                                                                          <div class="circle color_4"
+                                                                                                    index_id="${id}"
+                                                                                                    index_color="FBF475">
+                                                                                          </div>
+
+                                                                                          <div class="circle color_5"
+                                                                                                    index_id="${id}"
+                                                                                                    index_color="CBF0F8">
+                                                                                          </div>
+
+                                                                                          <div class="circle color_6"
+                                                                                                    index_id="${id}"
+                                                                                                    index_color="F28B82">
+                                                                                          </div>
+                                                                                </div>
+                                                                      </div>
+                                                            </div>
+
+                                                            <div class="popup_right">
+                                                                      <div class="popup_fav">
+                                                                                <button class="favorite"><i
+                                                                                                    class="fa-solid fa-thumbtack"></i></button>
+                                                                      </div>
+                                                                      <button id="save_btn" class="save_btn"><i
+                                                                                          class="fa-solid fa-share"
+                                                                                          index_save=${id}></i></button>
+                                                            </div>
+                                                  </div>
+                                        </div>
+                              </div>
+                    </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+          <script type="module" src="/app/main.js"></script>
+</body>
+
+</html>
